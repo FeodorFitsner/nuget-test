@@ -1,2 +1,4 @@
+platform: AnyCPU
+
 build:
   publish_nuget: true
