@@ -1,3 +1,5 @@
+shallow_clone: true
+
 platform: AnyCPU
 
 build:
