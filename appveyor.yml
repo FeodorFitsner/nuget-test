@@ -1,6 +1,7 @@
 shallow_clone: true
 
-platform: AnyCPU
+assembly_info:
+  patch: true
 
 build:
   publish_nuget: true
