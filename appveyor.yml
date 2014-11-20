@@ -5,3 +5,4 @@ assembly_info:
 
 build:
   publish_nuget: true
+
