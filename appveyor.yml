@@ -1,7 +1,13 @@
 shallow_clone: true
 
+install:
+  - ps: Update-AppveyorBuild -Version '1.1.1-test'
+
 assembly_info:
   patch: true
+
+before_build:
+  - echo %APPVEYOR_BUILD_VERSION%
 
 build:
   publish_nuget: true
