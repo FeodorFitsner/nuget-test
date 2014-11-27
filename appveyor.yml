@@ -1,3 +1,5 @@
+os: unstable
+
 shallow_clone: true
 
 assembly_info:
