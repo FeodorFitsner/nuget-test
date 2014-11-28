@@ -11,6 +11,9 @@ assembly_info:
 before_build:
   - echo %APPVEYOR_BUILD_VERSION%
 
+nuget:
+  disable_publish_on_pr: true
+
 build:
   publish_nuget: true
 
