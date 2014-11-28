@@ -8,6 +8,9 @@ install:
 assembly_info:
   patch: true
 
+nuget:
+  disable_publish_on_pr: true
+
 before_build:
   - echo %APPVEYOR_BUILD_VERSION%
 
