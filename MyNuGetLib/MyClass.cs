@@ -10,7 +10,7 @@ namespace MyNuGetLib
     {
         public string HelloWorld()
         {
-            return "Hello, world!!!";
+            return "Hello, world!";
         }
     }
 }
