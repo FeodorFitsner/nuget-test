@@ -1,4 +1,5 @@
-version: 1.0.{build}-test1
+version: 1.0.{build}
+
 assembly_info:
   patch: true
 
