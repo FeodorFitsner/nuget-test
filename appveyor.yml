@@ -3,6 +3,8 @@ version: 1.0.{build}-rc1
 assembly_info:
   patch: true
 
+platform: Any CPU
+
 nuget:
   disable_publish_on_pr: true
 
