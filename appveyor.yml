@@ -1,7 +1,7 @@
 version: 1.0.{build}-rc1
 
 environment:
-  my_project: MyNuGetLib.sln
+  my_project: MyNuGetLib\MyNuGetLib.csproj
 
 assembly_info:
   patch: true
