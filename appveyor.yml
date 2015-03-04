@@ -1,8 +1,5 @@
 version: 1.0.{build}-rc1
 
-environment:
-  my_project: MyNuGetLib\MyNuGetLib.csproj
-
 assembly_info:
   patch: true
 
@@ -12,7 +9,7 @@ nuget:
   disable_publish_on_pr: true
 
 build:
-  project: $(my_project)
+  project: MyNuGetLib\MyNuGetLib.csproj
   publish_nuget: true
   publish_nuget_symbols: true
   include_nuget_references: true
