@@ -15,3 +15,5 @@ build:
   include_nuget_references: true
   
 test: off
+
+# small comment
