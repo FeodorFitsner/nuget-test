@@ -9,9 +9,6 @@ nuget:
   disable_publish_on_pr: true
 
 build:
-  test
-
-build:
   project: MyNuGetLib\MyNuGetLib.csproj
   publish_nuget: true
   publish_nuget_symbols: true
