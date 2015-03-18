@@ -1,15 +1,13 @@
 version: 1.0.{build}-rc1
 
-assembly_info:
-  patch: true
-
-platform: Any CPU
-
-nuget:
-  disable_publish_on_pr: true
+assembly_info: 
+  patch: true 
+  file: AssemblyInfo.* 
+  assembly_version: "{version}" 
+  assembly_file_version: "{version}" 
+  assembly_informational_version: "{version}"
 
 build:
-  project: MyNuGetLib\MyNuGetLib.csproj
   publish_nuget: true
   publish_nuget_symbols: true
   include_nuget_references: true
