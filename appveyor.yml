@@ -1,4 +1,4 @@
-version: 1.0.{build}-rc1
+version: 1.0.{build}-rc2
 
 assembly_info: 
   patch: true 
