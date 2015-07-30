@@ -15,6 +15,9 @@ build:
 test: off
 
 deploy:
-  provider: NuGet
+- provider: NuGet
+  api_key:
+    secure: 5MUShxp5+kPsKeKnl2gHSniQOJQ5/B8REh4nH2LfTi7AwA1oUHulT1Apl9eR+hQs
+- provider: NuGet
   api_key:
     secure: 5MUShxp5+kPsKeKnl2gHSniQOJQ5/B8REh4nH2LfTi7AwA1oUHulT1Apl9eR+hQs
