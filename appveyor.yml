@@ -1,5 +1,11 @@
 version: 1.0.{build}
 
+init:
+- ps: Update-AppveyorBuild -Version "0.0.$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
+
+install:
+- echo %appveyor_build_version%
+
 assembly_info: 
   patch: true 
   file: AssemblyInfo.* 
