@@ -28,3 +28,11 @@ test: off
 #- provider: NuGet
 #  api_key:
 #    secure: 5MUShxp5+kPsKeKnl2gHSniQOJQ5/B8REh4nH2LfTi7AwA1oUHulT1Apl9eR+hQs
+
+notifications:
+- provider: Slack
+  incoming_webhook: https://hooks.slack.com/services/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11
+#  auth_token: ''
+  on_build_success: false
+  on_build_failure: false
+  on_build_status_changed: true 
