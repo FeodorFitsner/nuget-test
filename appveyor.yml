@@ -1,10 +1,16 @@
 version: 1.0.{build}
 
-init:
-- ps: Update-AppveyorBuild -Version "0.0.$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
+#init:
+#- ps: Update-AppveyorBuild -Version "0.0.$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
 
-install:
-- echo %appveyor_build_version%
+#install:
+#- echo %appveyor_build_version%
+
+xamarin:
+  email: feodor@appveyor.com
+  password:
+    secure: KPaIpDJc143PUza6qBdpWQ==
+  ios: true
 
 assembly_info: 
   patch: true 
@@ -29,10 +35,10 @@ test: off
 #  api_key:
 #    secure: 5MUShxp5+kPsKeKnl2gHSniQOJQ5/B8REh4nH2LfTi7AwA1oUHulT1Apl9eR+hQs
 
-notifications:
-- provider: Slack
-  incoming_webhook: https://hooks.slack.com/services/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11
+#notifications:
+#- provider: Slack
+#  incoming_webhook: https://hooks.slack.com/services/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11
 #  auth_token: ''
-  on_build_success: false
-  on_build_failure: false
-  on_build_status_changed: true 
+#  on_build_success: false
+#  on_build_failure: false
+#  on_build_status_changed: true 
