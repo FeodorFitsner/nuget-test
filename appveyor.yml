@@ -6,12 +6,12 @@ version: 1.0.{build}
 #install:
 #- echo %appveyor_build_version%
 
-xamarin:
-  email:
-    secure: u+5OC7iaTPjIYflqtV4AHZm8yK+PH7V8OrYhRZyc7D8=
-  password:
-    secure: KPaIpDJc143PUza6qBdpWQ==
-  ios: true
+#xamarin:
+#  email:
+#    secure: u+5OC7iaTPjIYflqtV4AHZm8yK+PH7V8OrYhRZyc7D8=
+#  password:
+#    secure: KPaIpDJc143PUza6qBdpWQ==
+#  ios: true
 
 assembly_info: 
   patch: true 
