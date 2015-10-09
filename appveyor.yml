@@ -7,7 +7,8 @@ version: 1.0.{build}
 #- echo %appveyor_build_version%
 
 xamarin:
-  email: feodor@appveyor.com
+  email:
+    secure: u+5OC7iaTPjIYflqtV4AHZm8yK+PH7V8OrYhRZyc7D8=
   password:
     secure: KPaIpDJc143PUza6qBdpWQ==
   ios: true
