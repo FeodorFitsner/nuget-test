@@ -32,6 +32,7 @@ deploy:
   symbol_server: https://ci.appveyor.com/nuget/appveyorsystems/api/v2/package
   api_key:
     secure: aFy/MyQ0uQJeS7U9uUtFSQwJ0PgHMqHHcux8cgHA0m4=
+  artifact: /.*\.symbols\.nupkg/
 
 #deploy:
 #- provider: NuGet
