@@ -1,4 +1,4 @@
-version: 1.0.{build}
+version: 2.0.{build}
 
 #init:
 #- ps: Update-AppveyorBuild -Version "0.0.$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
