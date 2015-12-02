@@ -29,7 +29,7 @@ test: off
 
 deploy_script:
 - nuget pack "C:\projects\nuget-test\MyNuGetLib\MyNuGetLib.csproj" -Properties "Configuration=Debug;Platform=AnyCPU" -IncludeReferencedProjects -OutputDirectory %appveyor_build_folder%
-- ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName "dup-$_.Name" }
+- ps: Get-ChildItem .\*.sln | % { Push-AppveyorArtifact $_.FullName -FileName "dup-$_.Name" }
 
 #deploy:
 #- provider: NuGet
