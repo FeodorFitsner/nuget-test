@@ -27,6 +27,10 @@ build:
   
 test: off
 
+after_test:
+- nuget pack "C:\projects\nuget-test\MyNuGetLib\MyNuGetLib.csproj" -Properties "Configuration=Debug;Platform=AnyCPU" -Symbols -IncludeReferencedProjects -OutputDirectory %appveyor_build_folder%
+- ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
+
 #deploy:
 #- provider: NuGet
 #  symbol_server: https://ci.appveyor.com/nuget/appveyorsystems/api/v2/package
