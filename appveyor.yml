@@ -36,11 +36,12 @@ deploy_script:
 - appveyor PushArtifact MyNuGetLib.%appveyor_build_version%.nupkg -FileName dup-MyNuGetLib.%appveyor_build_version%.nupkg
 #- ps: Push-AppveyorArtifact "MyNuGetLib.$($env:appveyor_build_version).nupkg" -FileName "MyNuGetLib.$($env:appveyor_build_version).nupkg"
 
-#deploy:
-#- provider: NuGet
+deploy:
+- provider: NuGet
 #  symbol_server: https://ci.appveyor.com/nuget/appveyorsystems/api/v2/package
-#  api_key:
-#    secure: aFy/MyQ0uQJeS7U9uUtFSQwJ0PgHMqHHcux8cgHA0m4=
+  server: https://www.myget.org/F/appveyor-test/api/v2/package
+  api_key:
+    secure: o+5HxqWE6l6x/XoEc45Ibzp7vAnbYf6ytmXnHcUUC+cvp9c8wzA/HA6mmYtrZGJS
 #  artifact: /.*\.symbols\.nupkg/
 
 #deploy:
