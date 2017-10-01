@@ -5,6 +5,8 @@ version: 2.0.{build}
 
 #init:
 #- ps: Update-AppveyorBuild -Version "0.0.$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
+init:
+- set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
 
 #install:
 #- echo %appveyor_build_version%
